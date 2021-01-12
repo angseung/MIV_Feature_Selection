@@ -134,7 +134,7 @@ for iter in range(iters):
         tmp_str = type(model).__name__
         plt.title("Check Feature Index Linearity, " + tmp_str)
         plt.show()
-        fig.savefig("C:/Users/ISW/OneDrive/문서/2020 KETI/2020.07.01_IEIE논문/plot/%s_Val_Plot_%02d_%02d_%02d.png" %(tmp_str, max_val, val_offset, iter + 1), dpi = 300)
+        fig.savefig("plot/%s_Val_Plot_%02d_%02d_%02d.png" %(tmp_str, max_val, val_offset, iter + 1), dpi = 300)
         plt.close()
 
 fin_acc = cum_acc / (iters * feats)
